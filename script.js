@@ -241,9 +241,6 @@ cards.forEach(card=>{
 
 });
 
-// =========================
-// LOADING EFFECT
-// =========================
 
 window.addEventListener('load',()=>{
 
