@@ -3,200 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culminância 2026 - Nossa Escola</title>
+    <title>Culminância 2026 - Colégio Dom Carlos</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <style>
-        /* --- RESET E CONFIGURAÇÕES GERAIS --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: #f5f5f7; /* Cinza bem claro, estilo Apple */
-            color: #1d1d1f;
-            overflow-x: hidden;
-        }
-
-        /* --- BARRA DE NAVEGAÇÃO (Style Apple) --- */
-        nav {
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px); /* Efeito de vidro fosco */
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-        }
-
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #800020; /* Tom de heráldica/vinho estilo Harvard */
-            text-decoration: none;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #515154;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #800020;
-        }
-
-        /* --- HERO SECTION (O destaque do site) --- */
-        .hero {
-            padding-top: 140px;
-            padding-bottom: 80px;
-            text-align: center;
-            background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            letter-spacing: -0.05em;
-            margin-bottom: 20px;
-            color: #1d1d1f;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            color: #86868b;
-            max-width: 700px;
-            margin: 0 auto 30px auto;
-            font-weight: 400;
-            line-height: 1.4;
-        }
-
-        .btn-primary {
-            background-color: #800020; /* Harvard Crimson */
-            color: white;
-            padding: 12px 30px;
-            border-radius: 30px; /* Bordas arredondadas estilo Apple */
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.2s, background-color 0.3s;
-            display: inline-block;
-        }
-
-        .btn-primary:hover {
-            transform: scale(1.05);
-            background-color: #5a0016;
-        }
-
-        /* --- SEÇÃO DE PROJETOS/CARDS --- */
-        .section-container {
-            max-width: 1100px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .grid-projetos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        /* Cards inspirados na Apple Education */
-        .card {
-            background: #ffffff;
-            border-radius: 18px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.03);
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-tag {
-            color: #800020;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: #1d1d1f;
-        }
-
-        .card p {
-            color: #6e6e73;
-            line-height: 1.6;
-            font-size: 1rem;
-        }
-
-        /* --- FOOTER --- */
-        footer {
-            background-color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-            border-top: 1px solid rgba(0,0,0,0.1);
-            color: #86868b;
-            font-size: 0.9rem;
-            margin-top: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">E.E. Excelsior</a>
+            <a href="#" class="logo">Colégio Dom Carlos</a>
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#sobre">Sobre a Culminância</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero" id="inicio">
         <h1>Culminância 2026</h1>
-        <p>Inovação, ciência e criatividade se encontram na apresentação dos itinerários formativos da nossa escola.</p>
-        <a href="#projetos" class="btn-primary">Ver Projetos</a>
+        <p>Inovação, ciência e criatividade se encontram na apresentação dos itinerários formativos da nossa comunidade acadêmica.</p>
+        <a href="#projetos" class="btn-primary">Explorar Projetos</a>
     </section>
 
     <section class="section-container" id="projetos">
         <h2 class="section-title">Destaques do Ano</h2>
+        <p class="section-subtitle">Conheça os trabalhos desenvolvidos por nossos alunos</p>
         
         <div class="grid-projetos">
             <div class="card">
@@ -219,22 +53,27 @@
         </div>
     </section>
 
+    <section class="info-section" id="contato">
+        <div class="info-grid">
+            <div class="info-block">
+                <h4>Localização</h4>
+                <p>Av. Mal. Deodoro, 635 - Centro<br>Palmas - PR, 85555-000</p>
+            </div>
+            <div class="info-block">
+                <h4>Contato</h4>
+                <p>Telefone: (46) 3262-1817<br>Atendimento: Secretaria Escolar</p>
+            </div>
+            <div class="info-block">
+                <h4>Portal Oficial</h4>
+                <p><a href="http://plmdomcarlos.seed.pr.gov.br" target="_blank">plmdomcarlos.seed.pr.gov.br ↗</a></p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Escola Estadual Excelsior. Todos os direitos reservados.</p>
-        <p style="margin-top: 10px; font-size: 0.8rem;">Inspirado na excelência acadêmica e no design minimalista.</p>
+        <p>&copy; 2026 Colégio Dom Carlos. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        // Exemplo de JS: Efeito simples de scroll suave para os links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
