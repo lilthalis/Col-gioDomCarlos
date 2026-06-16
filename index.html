@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culminância 2026 - Colégio Dom Carlos</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,36 +14,63 @@
             <a href="#" class="logo">Colégio Dom Carlos</a>
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">O Evento</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero" id="inicio">
-        <h1>Culminância 2026</h1>
-        <p>Inovação, ciência e criatividade se encontram na apresentação dos itinerários formativos da nossa comunidade acadêmica.</p>
-        <a href="#projetos" class="btn-primary">Explorar Projetos</a>
+        <div class="hero-content scroll-reveal">
+            <h1>Culminância 2026</h1>
+            <p>Onde o conhecimento acadêmico se transforma em soluções reais para o futuro.</p>
+            <a href="#projetos" class="btn-primary">Conhecer Projetos</a>
+        </div>
+    </section>
+
+    <section class="section-container" id="sobre">
+        <div class="about-grid">
+            <div class="about-text scroll-reveal">
+                <span class="section-tag">Excelência</span>
+                <h2>Formando mentes inovadoras</h2>
+                <p>A Culminância dos Itinerários Formativos do Colégio Dom Carlos é o ponto alto do nosso ano letivo. Aqui, os estudantes aplicam conceitos científicos, humanísticos e tecnológicos para responder aos desafios da nossa sociedade.</p>
+            </div>
+            <div class="about-stats scroll-reveal">
+                <div class="stat-box">
+                    <h3>30+</h3>
+                    <p>Projetos Apresentados</p>
+                </div>
+                <div class="stat-box">
+                    <h3>3</h3>
+                    <p>Grandes Áreas do Conhecimento</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="section-container" id="projetos">
-        <h2 class="section-title">Destaques do Ano</h2>
-        <p class="section-subtitle">Conheça os trabalhos desenvolvidos por nossos alunos</p>
+        <h2 class="section-title scroll-reveal">Destaques do Ano</h2>
+        <p class="section-subtitle scroll-reveal">Uma vitrine de criatividade e protagonismo estudantil</p>
         
         <div class="grid-projetos">
-            <div class="card">
+            <div class="card scroll-reveal">
+                <div class="card-icon">⚡</div>
                 <span class="card-tag">Tecnologia & Sociedade</span>
                 <h3>Cidades Inteligentes</h3>
                 <p>Como a automação e a robótica podem transformar o ambiente escolar e a nossa comunidade local.</p>
             </div>
 
-            <div class="card">
+            <div class="card scroll-reveal">
+                <div class="card-icon">🎨</div>
                 <span class="card-tag">Cultura & Arte</span>
                 <h3>Expressões Coletivas</h3>
                 <p>Uma releitura artística e histórica sobre a evolução da comunicação humana através das eras.</p>
             </div>
 
-            <div class="card">
+            <div class="card scroll-reveal">
+                <div class="card-icon">🌱</div>
                 <span class="card-tag">Ciências da Natureza</span>
                 <h3>Sustentabilidade Aplicada</h3>
                 <p>Soluções práticas e biodigestores caseiros desenvolvidos para reaproveitamento de resíduos orgânicos.</p>
@@ -53,8 +78,35 @@
         </div>
     </section>
 
+    <section class="section-container" id="cronograma">
+        <h2 class="section-title scroll-reveal">Programação do Evento</h2>
+        <div class="timeline">
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-time">08:00</div>
+                <div class="timeline-content">
+                    <h3>Abertura Oficial</h3>
+                    <p>Boas-vindas da direção e início das visitações aos estandes de tecnologia.</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-time">10:30</div>
+                <div class="timeline-content">
+                    <h3>Mesa Redonda</h3>
+                    <p>Debate com alunos e professores sobre os impactos da Inteligência Artificial na educação.</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-time">14:00</div>
+                <div class="timeline-content">
+                    <h3>Mostra Cultural & Encerramento</h3>
+                    <p>Apresentações artísticas e premiação dos projetos destaques do ano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="info-section" id="contato">
-        <div class="info-grid">
+        <div class="info-grid scroll-reveal">
             <div class="info-block">
                 <h4>Localização</h4>
                 <p>Av. Mal. Deodoro, 635 - Centro<br>Palmas - PR, 85555-000</p>
