@@ -3,292 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Dom Carlos</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Culminância 2026 - Nossa Escola</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- RESET E CONFIGURAÇÕES GERAIS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7; /* Cinza bem claro, estilo Apple */
+            color: #1d1d1f;
+            overflow-x: hidden;
+        }
+
+        /* --- BARRA DE NAVEGAÇÃO (Style Apple) --- */
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px); /* Efeito de vidro fosco */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #800020; /* Tom de heráldica/vinho estilo Harvard */
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #515154;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #800020;
+        }
+
+        /* --- HERO SECTION (O destaque do site) --- */
+        .hero {
+            padding-top: 140px;
+            padding-bottom: 80px;
+            text-align: center;
+            background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #86868b;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .btn-primary {
+            background-color: #800020; /* Harvard Crimson */
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px; /* Bordas arredondadas estilo Apple */
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            background-color: #5a0016;
+        }
+
+        /* --- SEÇÃO DE PROJETOS/CARDS --- */
+        .section-container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .grid-projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Cards inspirados na Apple Education */
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-tag {
+            color: #800020;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        .card p {
+            color: #6e6e73;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            color: #86868b;
+            font-size: 0.9rem;
+            margin-top: 100px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
-
-    <header class="header">
-
-        <div class="logo">
-            DOM CARLOS
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">E.E. Excelsior</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre a Culminância</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <nav class="navbar">
-
-            <a href="#sobre">Sobre</a>
-
-            <a href="#ensino">Ensino</a>
-
-            <a href="#estrutura">Estrutura</a>
-
-            <a href="#contato">Contato</a>
-
-        </nav>
-
-    </header>
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <span class="hero-tag">
-                Educação • Palmas - Paraná
-            </span>
-
-            <h1>
-                Construindo o futuro através do conhecimento.
-            </h1>
-
-            <p>
-                O Colégio Dom Carlos oferece educação de qualidade,
-                desenvolvimento humano e preparação para os desafios
-                do mundo moderno.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#sobre" class="btn-primary">
-                    Conheça a Escola
-                </a>
-
-                <a href="#contato" class="btn-secondary">
-                    Entrar em Contato
-                </a>
-
-            </div>
-
-        </div>
-
+    <section class="hero" id="inicio">
+        <h1>Culminância 2026</h1>
+        <p>Inovação, ciência e criatividade se encontram na apresentação dos itinerários formativos da nossa escola.</p>
+        <a href="#projetos" class="btn-primary">Ver Projetos</a>
     </section>
 
-    <!-- SOBRE -->
+    <section class="section-container" id="projetos">
+        <h2 class="section-title">Destaques do Ano</h2>
+        
+        <div class="grid-projetos">
+            <div class="card">
+                <span class="card-tag">Tecnologia & Sociedade</span>
+                <h3>Cidades Inteligentes</h3>
+                <p>Como a automação e a robótica podem transformar o ambiente escolar e a nossa comunidade local.</p>
+            </div>
 
-    <section id="sobre" class="about">
+            <div class="card">
+                <span class="card-tag">Cultura & Arte</span>
+                <h3>Expressões Coletivas</h3>
+                <p>Uma releitura artística e histórica sobre a evolução da comunicação humana através das eras.</p>
+            </div>
 
-        <div class="section-header">
-
-            <span>Quem Somos</span>
-
-            <h2>Uma escola focada no aprendizado e no futuro.</h2>
-
+            <div class="card">
+                <span class="card-tag">Ciências da Natureza</span>
+                <h3>Sustentabilidade Aplicada</h3>
+                <p>Soluções práticas e biodigestores caseiros desenvolvidos para reaproveitamento de resíduos orgânicos.</p>
+            </div>
         </div>
-
-        <div class="about-content">
-
-            <p>
-                O Colégio Dom Carlos é uma instituição de ensino localizada
-                em Palmas, Paraná, dedicada ao desenvolvimento acadêmico,
-                social e humano dos seus estudantes.
-
-                Nossa missão é formar cidadãos preparados para os desafios
-                do presente e as oportunidades do futuro.
-            </p>
-
-        </div>
-
     </section>
 
-    <!-- ESTATÍSTICAS -->
-
-    <section class="stats">
-
-        <div class="stat-card">
-
-            <h3>+500</h3>
-
-            <p>Alunos</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h3>+30</h3>
-
-            <p>Professores</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h3>+20</h3>
-
-            <p>Anos de História</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h3>100%</h3>
-
-            <p>Compromisso</p>
-
-        </div>
-
-    </section>
-
-    <!-- ENSINO -->
-
-    <section id="ensino" class="education">
-
-        <div class="section-header">
-
-            <span>Ensino</span>
-
-            <h2>Áreas que impulsionam o aprendizado.</h2>
-
-        </div>
-
-        <div class="education-grid">
-
-            <div class="education-card">
-
-                <h3>Ensino Fundamental</h3>
-
-                <p>
-                    Formação sólida para o desenvolvimento dos alunos.
-                </p>
-
-            </div>
-
-            <div class="education-card">
-
-                <h3>Ensino Médio</h3>
-
-                <p>
-                    Preparação acadêmica para vestibulares e carreira.
-                </p>
-
-            </div>
-
-            <div class="education-card">
-
-                <h3>Tecnologia</h3>
-
-                <p>
-                    Incentivo à inovação e ao pensamento digital.
-                </p>
-
-            </div>
-
-            <div class="education-card">
-
-                <h3>Projetos Educacionais</h3>
-
-                <p>
-                    Experiências que conectam teoria e prática.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ESTRUTURA -->
-
-    <section id="estrutura" class="campus">
-
-        <div class="section-header">
-
-            <span>Estrutura</span>
-
-            <h2>Ambientes preparados para ensinar e inspirar.</h2>
-
-        </div>
-
-        <div class="campus-grid">
-
-            <div class="campus-item"></div>
-            <div class="campus-item"></div>
-            <div class="campus-item"></div>
-            <div class="campus-item"></div>
-
-        </div>
-
-    </section>
-
-    <!-- CITAÇÃO -->
-
-    <section class="quote">
-
-        <h2>
-            “Educação é a ferramenta mais poderosa para transformar o futuro.”
-        </h2>
-
-    </section>
-
-    <!-- CONTATO -->
-
-    <section id="contato" class="contact">
-
-        <div class="section-header">
-
-            <span>Contato</span>
-
-            <h2>Estamos prontos para receber você.</h2>
-
-        </div>
-
-        <div class="contact-info">
-
-            <div class="contact-card">
-
-                <h3>Endereço</h3>
-
-                <p>
-                    Av. Mal. Deodoro, 635<br>
-                    Centro, Palmas - PR
-                </p>
-
-            </div>
-
-            <div class="contact-card">
-
-                <h3>Horário</h3>
-
-                <p>
-                    Atendimento escolar
-                </p>
-
-            </div>
-
-            <div class="contact-card">
-
-                <h3>Portal</h3>
-
-                <p>
-                    plmdomcarlos.seed.pr.gov.br
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-
-        <h3>Colégio Dom Carlos</h3>
-
-        <p>
-            Educação, conhecimento e futuro.
-        </p>
-
-        <small>
-            Projeto Conceitual Desenvolvido por Lil Thalis
-        </small>
-
+    <footer>
+        <p>&copy; 2026 Escola Estadual Excelsior. Todos os direitos reservados.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">Inspirado na excelência acadêmica e no design minimalista.</p>
     </footer>
 
-    <script src="script.js"></script>
-
+    <script>
+        // Exemplo de JS: Efeito simples de scroll suave para os links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
